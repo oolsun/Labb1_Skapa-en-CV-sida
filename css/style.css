@@ -29,7 +29,7 @@ body a {
 
 .textbox {
   background-color: rgba(245, 245, 245, 0.5);
-  width: 60%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   padding: 1%;
@@ -116,20 +116,22 @@ footer {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
   float: left;
   font-size: larger;
   padding: 0.5%;
-  perspective: 800px;
   width: 49%;
 }
 
 .flip-box {
   background: transparent;
   cursor: default;
-  height: 450px;
+  height: 500px;
   width: 100%;
   padding-top: 1%;
 }
@@ -225,7 +227,7 @@ footer {
   margin-right: 10px;
 }
 
-.button {
+.project-button {
   font-size: 32px;
   padding: 10px;
   border-radius: 10px;
@@ -234,10 +236,9 @@ footer {
   cursor: pointer;
   display: flex;
   width: 300px;
-  height: 100px;
+  height: 200px;
   justify-content: center;
   margin: 5px;
-  position: relative;
   transition: .3s ease-in;
 
   &:hover {
@@ -246,7 +247,7 @@ footer {
   }
 }
 
-.button p {
+.project-button p {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -310,7 +311,7 @@ footer {
 
 .contactlinks {
   justify-content: space-between;
-  width: 60%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
