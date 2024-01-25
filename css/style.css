@@ -1,6 +1,8 @@
+/* Fonts from google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/*General*/
+/* General */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -44,14 +46,21 @@ body a {
   padding-bottom: 1%;
   font-size: xx-large;
   margin-bottom: 10px;
-
 }
 
 h1 {
   text-align: center;
 }
 
-/*Menu*/
+footer {
+  background-color: rgba(245, 245, 245, 0.5);
+  text-align: center;
+  padding: 0.5%;
+  width: 99%;
+  margin-top: auto;
+}
+
+/* Menu */
 
 .main-menu {
   width: 100%;
@@ -73,7 +82,6 @@ h1 {
   float: left;
   font-size: large;
   display: block;
-  color: black;
   padding: 14px 16px;
   text-decoration: none;
 
@@ -81,32 +89,12 @@ h1 {
     background-color: rgb(117, 85, 117);
   }
 
+  &.active {
+    background-color: rgb(117, 85, 117);
+  }
 }
 
-.active {
-  background-color: rgb(117, 85, 117);
-}
-
-/* .column {
-    background-color: rgba(245, 245, 245, 0.61);
-    float:left;
-    padding: 1%;
-}
-.left{
-    width: 25%;
-}
-.right{
-    width: 71%;
-} 
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
-
-
-/*Index*/
+/* Index */
 
 .imagebox {
   max-width: 600px;
@@ -122,69 +110,15 @@ h1 {
   width: 100%;
 }
 
-/* Contact */
-
-.btnlinks {
-  position: relative;
-  transition: transform 0.3s;
-  width: 31%;
-}
-
-.btnlinks:hover {
-  transform: scale(1.2);
-}
-
-.contactlinks {
-  justify-content: space-between;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-textarea {
-  font-family: "Poppins", sans-serif;
-  height: 200px;
-}
-
-.nameinput,
-.mailinput {
-  float: left;
-  width: 49%;
-  padding: 0.5%;
-}
-
-.textinput {
-  padding: 0.5%;
-}
-
-input[type=submit] {
-  background-color: rgb(117, 85, 117);
-  font-size: large;
-  height: 50px;
-  width: 100%;
-  cursor: pointer;
-}
-
 /* CV */
 
-.services-box {
+.container-box {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
 
-.service {
+.container {
   float: left;
   font-size: larger;
   padding: 0.5%;
@@ -245,7 +179,7 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 700px) {
-  .service {
+  .container {
     width: 100%;
   }
 
@@ -307,8 +241,8 @@ input[type=submit] {
   transition: .3s ease-in;
 
   &:hover {
-    background-color: #c796ff;
-    box-shadow: 0 0 5px #c796ff, 0 0 25px #c796ff, 0 0 50px #c796ff, 0 0 200px #c796ff, 0 0 350px #c796ff;
+    background-color: #d596ff;
+    box-shadow: 0 0 5px #d596ff, 0 0 25px #d596ff, 0 0 50px #d596ff, 0 0 200px #d596ff, 0 0 350px #d596ff;
   }
 }
 
@@ -327,7 +261,7 @@ input[type=submit] {
   visibility: hidden;
   background: rgba(245, 245, 245, 0.5);
 
-  .cancel {
+  .close {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -362,10 +296,64 @@ input[type=submit] {
   }
 }
 
-footer {
-  background-color: rgba(245, 245, 245, 0.5);
-  text-align: center;
+/* Contact */
+
+.btnlinks {
+  position: relative;
+  transition: transform 0.3s;
+  width: 31%;
+}
+
+.btnlinks:hover {
+  transform: scale(1.2);
+}
+
+.contactlinks {
+  justify-content: space-between;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  height: 200px;
+}
+
+.nameinput,
+.mailinput {
+  float: left;
+  width: 49%;
   padding: 0.5%;
+}
+
+.textinput {
+  padding: 0.5%;
+}
+
+input[type=submit] {
+  background-color: rgb(117, 85, 117);
+  font-size: large;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .nameinput,
+.mailinput {
+  float: left;
   width: 99%;
-  margin-top: auto;
+}
 }
