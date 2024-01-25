@@ -76,6 +76,7 @@ h1 {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
+
   &:hover {
     background-color: rgb(117, 85, 117);
   }
@@ -280,7 +281,7 @@ input[type=submit] {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  }
+}
 
 .project-menu img {
   width: 50px;
@@ -293,7 +294,6 @@ input[type=submit] {
 .button {
   font-size: 32px;
   padding: 10px;
-  border: 2px solid black;
   border-radius: 10px;
   background-color: rgba(245, 245, 245, 0.5);
   text-decoration: none;
@@ -303,6 +303,13 @@ input[type=submit] {
   height: 100px;
   justify-content: center;
   margin: 5px;
+  position: relative;
+  transition: .3s ease-in;
+
+  &:hover {
+    background-color: #c796ff;
+    box-shadow: 0 0 5px #c796ff, 0 0 25px #c796ff, 0 0 50px #c796ff, 0 0 200px #c796ff, 0 0 350px #c796ff;
+  }
 }
 
 .button p {
